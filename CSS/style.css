@@ -7,7 +7,7 @@
 }
 
 body{
-    background: #83c327;
+    background: #4b621e;
 }
 
 .header{
@@ -155,7 +155,7 @@ body{
 .Container {
     position: relative;
     
-    height: 500px;
+    height: 600px;
 
     z-index: -2;
     
@@ -254,7 +254,7 @@ img.imags{
 }
 
 .main .titulo1{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bolder;
 }
 
@@ -264,7 +264,7 @@ img.imags{
     padding: 25px;
     width: 200px;
 
-    margin-right: 200px;
+    margin-right: 150px;
 }
 
 .main ul{
@@ -273,7 +273,7 @@ img.imags{
 
 .main .t2 {
     position:inherit;
-    border: 1px solid #000;
+    border: 3px double #000;
     
     height: 250px;
 
@@ -296,6 +296,48 @@ img.imags{
 .main .text1{
     font-size: 30px;
     font-weight: bolder;
+}
+
+.main .t3 {
+    position:inherit;
+    border: 3px double #000;
+    
+    height: 450px;
+
+    text-align: center;
+    width: 500px;
+}
+
+
+.main .tab{
+    text-align: left;
+    
+    color: #6c6c6c;
+    font-size: 20px;
+}
+
+.main .tab th{
+    padding-top: 20px;
+    align-items: center;
+}
+
+.main .tab td.a{
+    padding-top: 20px;
+}
+
+.main .tab td.b{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.tab .i1{
+    width: 50px;
+}
+.tab .i2{
+    width: 35px;
+}
+.tab .i3{
+    width: 50px;
 }
 
 /*DOWN*/
