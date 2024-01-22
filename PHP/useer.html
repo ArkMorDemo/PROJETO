@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="..\CSS\style.css">
-<link rel="stylesheet" href="../CSS/slide.css">
+<link rel="stylesheet" href="../CSS/login.css">
 
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACT</title>
+    <title>Document</title>
 </head>
 <body>
  
@@ -57,41 +57,17 @@
 <!--//////////////////////////-->
 <!-- Container   -    Main    -->
     <main class="main">
-    <h1 class="titulo1">Alguns dos nossos produtos </h1>
-    <div class="w3-content w3-display-container">
-        <img class="mySlides" src="../images/imgslide/BALDE LIXO 52L.jpg" style="width:100%">
-        <img class="mySlides" src="../images/imgslide/estendal.jpg" style="width:100%">
-        <img class="mySlides" src="../images/imgslide/marisco.JPG" style="width:100%">
-        <img class="mySlides" src="../images/imgslide/matamoscas.jpg" style="width:100%">
-        <img class="mySlides" src="../images/imgslide/relogio.jpg" style="width:100%">
-        <img class="mySlides" src="../images/imgslide/trela.jpg" style="width:100%">
-      
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-      </div>
-
-   
-    <div class="down">
-    </main>
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-        </script>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Login</h1>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite seu e-mail" />
+            <input type="submit" value="Acessar" class="btn" />
+        </form>
+    </div>
 <!-- Container   -    Main    -->
 <!--//////////////////////////-->
 
