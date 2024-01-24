@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-body {
+.main {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
     color: #023047
 }
 
-.page {
+.main .page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +16,7 @@ body {
     background-color: #ffffff;
 }
 
-.formLogin {
+.main .formLogin {
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -28,25 +26,25 @@ body {
     gap: 5px
 }
 
-.areaLogin img {
+.main .areaLogin img {
     width: 420px;
 }
 
-.formLogin h1 {
+.main .formLogin h1 {
     padding: 0;
     margin: 0;
     font-weight: 500;
     font-size: 2.3em;
 }
 
-.formLogin p {
+.main .formLogin p {
     display: inline-block;
     font-size: 14px;
     color: #666;
     margin-bottom: 25px;
 }
 
-.formLogin input {
+.main .formLogin input {
     padding: 15px;
     font-size: 14px;
     border: 1px solid #ccc;
@@ -58,16 +56,16 @@ body {
 }
 
 
-.formLogin input:focus {
+.main .formLogin input:focus {
     border: 1px solid #4A621E;
 }
 
-.formLogin label {
+.main .formLogin label {
     font-size: 14px;
     font-weight: 600;
 }
 
-.formLogin a {
+.main .formLogin a {
     display: inline-block;
     margin-bottom: 20px;
     font-size: 13px;
@@ -75,11 +73,11 @@ body {
     transition: all linear 160ms;
 }
 
-.formLogin a:hover {
+.main .formLogin a:hover {
     color: #4A621E;
 }
 
-.btn {
+.main .btn {
     background-color: #4A621E;
     color: #fff;
     font-size: 14px;
@@ -91,8 +89,109 @@ body {
 
 }
 
-.btn:hover {
+.main .btn:hover {
     transform: scale(1.05);
     background-color: #4A621E;
 
 }
+
+/* footer */
+
+.footer{
+    position: absolute ;
+
+    left: 0;
+    margin-top: -100px;
+
+    width: 100%;
+
+    padding: 30px;
+    padding-left: 80px;
+
+    background-color: rgb(206, 206, 206);
+
+}
+
+.footer .titulo1{
+    font-size: 20px;
+    font-weight: 300;
+    color: #6d9b2d;
+    /*outline*/
+    text-shadow:
+        -.1px  -.1px 0 #000,
+        0      -.1px 0 #000,
+        .1px   -.1px 0 #000,
+        .1px   0     0 #000,
+        .1px   .1px  0 #000,
+        0      .1px  0 #000,
+        -.1px  .1px  0 #000,
+        -.1px  0     0 #000;
+    /*outline*/
+}
+
+.footer .titulo2{
+    padding-top: 10px;
+    
+    font-size: 19px;
+    font-weight: 700;
+}
+
+/*icons de contactos*/
+.contatos{
+    position: absolute;
+
+    right: 50px;
+
+    align-items: center;
+
+    height: 50px;
+    width: 100px;
+
+}
+
+.alt{
+    height: 45px;
+}
+
+.alt:hover{
+    transform: scale(1.2);
+}
+/*icons de contactos*/
+
+/*grid*/
+.footer .grid-container {
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    
+    width: 600px;
+
+    color: #282828;
+}
+  
+.footer .grid-item {
+    text-align: left;
+    padding-right: 10px;
+}
+  
+.footer .item1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+  
+.footer .item2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+/*grid*/
+
+.footer p.text1{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer p.text2{
+    font-size: 10px;
+}
+
+/* footer */
